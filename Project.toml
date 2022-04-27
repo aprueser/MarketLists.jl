@@ -3,6 +3,16 @@ uuid = "1791e4d3-c481-4fa1-ad32-b71e965e4dfb"
 authors = ["Andrew Prueser <aprueser@gmail.com> and contributors"]
 version = "0.1.0"
 
+[deps]
+ArgCheck = "dce04be8-c92d-5529-be00-80e4d2c0e197"
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+DataFramesMeta = "1313f7d8-7da2-5740-9ea0-a2ca25f37964"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+LazyJSON = "fc18253b-5e1b-504c-a4a2-9ece4944c004"
+XLSX = "fdbf4ff8-1666-58a4-91e7-1b58723a45e0"
+
 [compat]
 julia = "1.7"
 
