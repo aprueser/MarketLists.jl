@@ -14,6 +14,7 @@ LazyJSON = "fc18253b-5e1b-504c-a4a2-9ece4944c004"
 XLSX = "fdbf4ff8-1666-58a4-91e7-1b58723a45e0"
 
 [compat]
+XLSX = "0.7"
 julia = "1.7"
 
 [extras]
