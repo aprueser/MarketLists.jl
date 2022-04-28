@@ -18,6 +18,7 @@ ArgCheck = "2"
 CSV = "0.10"
 LazyJSON = "0.2"
 XLSX = "0.7"
+DataFrames = "1"
 DataFramesMeta = "0.11"
 julia = "1.7"
 
