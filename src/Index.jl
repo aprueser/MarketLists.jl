@@ -81,7 +81,7 @@ function parseIndexMembersFileToDataFrame(httpRet::Dict{Symbol, Union{String, In
 
                 @subset! df :Ticker .!= "CASH_USD" 
 
-                @select! df :symbol = :Ticker :name = :Name $(Not([:Ticker, :Name]))
+                @select! df :symbol = String.(strip.(:Ticker)) :name = :Name $(Not([:Ticker, :Name]))
             else
                 df = DataFrame(CSV.File(holdingsFile, normalizenames=true, ignoreemptyrows=true, dateformat="mm/dd/yyyy", types=[String, String, String, String, String, Float64, String, String, String, Dates.Date]))
                
@@ -92,7 +92,7 @@ function parseIndexMembersFileToDataFrame(httpRet::Dict{Symbol, Union{String, In
 
                 @subset! df :Class_of_Shares .!= "Currency"
 
-                @select! df :symbol = :Holding_Ticker :indexSymbol = :Fund_Ticker :name = :Name $(Not([:Holding_Ticker, :Fund_Ticker, :Name]))
+                @select! df :symbol = String.(strip.(:Holding_Ticker)) :indexSymbol = :Fund_Ticker :name = :Name $(Not([:Holding_Ticker, :Fund_Ticker, :Name]))
             end
             
 

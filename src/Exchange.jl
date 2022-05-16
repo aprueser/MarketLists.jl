@@ -58,6 +58,7 @@ function parseExchangeResponseToDataFrame(httpRet::Dict{Symbol, Union{String, In
             end
 
             @transform! df begin
+                :symbol = String.(strip.(:symbol))
                 :lastsale = tryparse.(Float64, :lastsale)
                 :netchange = tryparse.(Float64, :netchange)
                 :pctchange = tryparse.(Float64, :pctchange)
