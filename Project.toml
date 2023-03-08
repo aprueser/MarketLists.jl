@@ -1,7 +1,7 @@
 name = "MarketLists"
 uuid = "1791e4d3-c481-4fa1-ad32-b71e965e4dfb"
 authors = ["Andrew Prueser <aprueser@gmail.com> and contributors"]
-version = "0.1.0"
+version = "0.2.5"
 
 [deps]
 ArgCheck = "dce04be8-c92d-5529-be00-80e4d2c0e197"
@@ -20,7 +20,7 @@ DataFrames = "1"
 DataFramesMeta = ">= 0.11"
 HTTP = ">= 0.9"
 LazyJSON = "0.2"
-XLSX = "0.7, 0.8"
+XLSX = ">= 0.7"
 julia = ">= 1.7"
 
 [extras]
