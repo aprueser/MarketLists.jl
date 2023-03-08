@@ -1,6 +1,10 @@
 using MarketLists
 using Test
 
-@testset "MarketLists.jl" begin
-    # Write your tests here.
+@testset verbose = true "MarketLists.Exchange" begin
+    include("exchange_tests.jl")
+end
+
+@testset verbose = true "MarketLists.Index" begin
+    include("index_tests.jl")
 end
